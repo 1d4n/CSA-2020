@@ -1,0 +1,22 @@
+char		*levelnames[21] =
+{
+"The Land of CSA",
+"CSA HINT: I",
+"CSA HINT: o",
+"CSA HINT: A",
+"CSA HINT: 8",
+"CSA HINT: e",
+"Level 6",
+"CSA HINT: 7",
+"Level 8",
+"CSA HINT: h",
+"CSA HINT: R",
+"Level 11",
+"CSA HINT: c",
+"Level 13",
+"CSA HINT: !",
+"CSA HINT: L",
+"CSA HINT: _",
+"",
+"Title Page"
+};

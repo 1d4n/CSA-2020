@@ -1,0 +1,9 @@
+['I', 'o', 'A', '8', 'e', '7', 'h', 'R', 'c', '!', 'L', '_']
+CSA{No BrOcOoLi f0r YoU! :)} (from keen 1)
+FLAG = CSA{ + 16 chars + }
+7he_c8A_8RocALI!
+7he_8RocALI!
+CSA{oh!_7he_8RocooLI!}
+
+I_hA7e_8RoccoLI! (len = 16)
+CSA{I_hA7e_8RoccoLI!}
