@@ -1,0 +1,5 @@
+5a 01 fe dd 74 9c 2e	# first message sent to the server 
+5a fe 2c 91 60 5e	# first response (without checksum)
+5a 2c d2 33 1f		# second message send to the server (without checksum)
+
+xor "91 60 5e" with "d2 33 1f" = 'CSA'
