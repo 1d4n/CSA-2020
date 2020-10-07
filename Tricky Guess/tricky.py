@@ -21,7 +21,7 @@ def common_letters(words_list, current_word, number):
         for char in current_word:
             if char in word:
                 counter += 1
-            if counter > number:
+            if counter == number:
                 filtered_list.append(word)
                 break
     return filtered_list
