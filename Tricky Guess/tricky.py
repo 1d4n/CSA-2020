@@ -10,8 +10,8 @@ def init_conn(conn, host, port):
 
 def get_words():
     with open('words.txt', 'r') as w:
-        w_list = w.readlines()
-    return w_list
+        w_list = w.read().split('\n')
+    return w_list[:-1]
 
 
 def common_letters(words_list, current_word, number):
