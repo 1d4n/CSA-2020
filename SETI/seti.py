@@ -33,13 +33,13 @@ def is_char_fit(byte, bits_list):
     return True
 
 
-first_options = []
+first_options = list()
 for i in range(len(first_message)):
     first_options.append([chr(j) for j in range(32, 126)
                           if chr(j) not in f"/[]^*()=;><+" and is_char_fit(bin(j)[2:].zfill(8), first_message[i])])
 print("options for first message:", first_options)
 
-second_options = []
+second_options = list()
 for i in range(len(second_message)):
     second_options.append([chr(j) for j in range(32, 126)
                           if chr(j) not in f"/[]^*()=;><+" and is_char_fit(bin(j)[2:].zfill(8), second_message[i])])
