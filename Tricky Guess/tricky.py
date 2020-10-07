@@ -49,11 +49,11 @@ if __name__ == '__main__':
                 
                 respond = s.recv(64).decode()
                 if len(respond) > 3:
-                    print("The flag is:", respond)
+                    print("\nThe flag is:", respond)
                     found = True
                     break
                 
-                print("Common letters:", respond)
+                print("\nCommon letters:", respond)
                 words = common_letters(words, word_to_send, int(respond))
         
         print("Total attempts:", attempts)
