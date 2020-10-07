@@ -1,6 +1,3 @@
-// KeenDream2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 using namespace std;
 #include <cstring>
@@ -268,7 +265,7 @@ int main()
 	KEENRUNR4SPR			=	76	// gamestate.key_index = 14	(s_keenwalk4)
 	*/
 
-	int key_indexes[8] = { 93, 100, 137, 137, 73, 74, 75, 76 };
+	int key_indexes[8] = {93, 100, 137, 137, 73, 74, 75, 76};
 	for (size_t i = 0; i < 8; i++)
 	{
 		CP_InitRndT((uint16_t)key_indexes[i]);
@@ -285,6 +282,5 @@ int main()
 	}
 
 	std::cout << arr2 << std::endl;
-	std::getchar();
 
 }
