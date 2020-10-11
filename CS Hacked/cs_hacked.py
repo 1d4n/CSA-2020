@@ -9,12 +9,10 @@ def sequence_perms():
         words = [word for word in d.read().split('\n')]
     with open('packets.txt', 'r') as p:
         packets_len = [(len(packet) // 2 - 1) for packet in p.read().split('\n')]
-    
     words.sort(key = len)
     words_len = {length: list(set(items)) for length, items in groupby(words, key=len) if length in packets_len}
     possible_words = [words_len[packet_len] for packet_len in packets_len]
     print(possible_words)
-
     return [o for o in product(*possible_words)]
 
 
