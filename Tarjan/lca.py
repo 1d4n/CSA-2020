@@ -33,7 +33,3 @@ if __name__ == '__main__':
 
     flag = ''.join([tree[lca(pair)] for pair in pairs_list])
     print("The flag is:", flag)
-
-
-
-
