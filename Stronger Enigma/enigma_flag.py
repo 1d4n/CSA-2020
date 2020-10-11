@@ -14,15 +14,10 @@ not_understand = "I don't understand you\n"
 get_data = "GET-SECRET-DATA"
 
 
-def init_conn(conn, host, port):
-    conn.connect((host, port))
-    conn.recv(1024).decode()
-
-
 def process_message(conn):
     mapping = {j: '?'*26 for j in range(26)}
     counter = 0
-    print("working... please wait...")
+    print("breaking the ENIGMA... please wait...")
     for i in range(26):
         resp = conn.recv(1024).decode()
         if resp == not_understand:
@@ -55,11 +50,10 @@ def request_data(conn, mappings):
     encrypted_req += '\n'
     conn.send(encrypted_req.encode())
     encrypted_data = conn.recv(1024).decode()
-    return encrypted_data
+    return encrypted_data, counter
 
 
-def decrypt(encrypted, mappings):
-    counter = 13
+def decrypt(encrypted, mappings, counter):
     decrypted = ''
     for char in encrypted:
         if char not in string.ascii_uppercase:
@@ -74,10 +68,11 @@ if __name__ == '__main__':
     start_time = time.time()
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        init_conn(s, '18.156.68.123', 80)
+        s.connect(('18.156.68.123', 80))
+        s.recv(64)
         m = process_message(s)
-        e = request_data(s, m)
-        flag = decrypt(e, m)
+        e, c = request_data(s, m)
+        flag = decrypt(e, m, c)
 
     print("The flag is:", flag)
-    print("Total time:", time.time() - start_time, "seconds.")
+    print("Total time:", time.time() - start_time, "seconds.")  # ~ 4 secs
