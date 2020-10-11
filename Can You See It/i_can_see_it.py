@@ -2,7 +2,7 @@ import cv2
 import time
 
 start_time = time.time()
-cap = cv2.VideoCapture('video.mp4')
+cap = cv2.VideoCapture('can_you_see_it.mp4')
 f = open("flag.txt", "w")
 
 while cap.isOpened():
