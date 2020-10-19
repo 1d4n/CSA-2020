@@ -5,8 +5,8 @@ with open('first_signal.txt', 'r') as first_file:
 with open('second_signal.txt', 'r') as second_file:
     second_signal = json.load(second_file)
 
-first_message = [[''.join(map(str, sub)) for sub in sub_list] for sub_list in first_signal]
-second_message = [[''.join(map(str, sub)) for sub in sub_list] for sub_list in second_signal]
+first_message = [[''.join(map(str, i)) for i in sub_list] for sub_list in first_signal]
+second_message = [[''.join(map(str, i)) for i in sub_list] for sub_list in second_signal]
 
 
 def is_fit(byte, bits):
@@ -32,10 +32,10 @@ def is_char_fit(byte, bits_list):
 
 
 first_options = [[chr(j) for j in range(32, 126) if chr(j) not in f"/[]^*()=;><+" and is_char_fit(bin(j)[2:].zfill(8), char)] for char in first_message]
-print("options for first message:\n", first_options)
+print("Options for first message:\n", first_options)
 
 second_options = [[chr(j) for j in range(32, 126) if chr(j) not in f"/[]^*()=;><+" and is_char_fit(bin(j)[2:].zfill(8), char)] for char in second_message]
-print("\noptions for first message:\n", second_options)
+print("\nOptions for first message:\n", second_options)
 
 print("\nFLAG: CSA{L1ttL3_P30pL3,_WhY_K4'Nt_w3_4LL_Ju5t_93t_4L0N9?}")
 #############################################################
