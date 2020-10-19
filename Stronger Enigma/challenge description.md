@@ -6,7 +6,7 @@ It's national security matter and we only trust you to solve the mystery - what 
 We were able to track the enemy's other machine in this address: 18.156.68.123:80.
 We COUNT on you on this, don't let us down!
 Good Luck!
-\
+  /_______________________________________________________________________/
          /     /  // --- /   / --- /   / --- /   / --- /   / --- //  /     /
         /     /  // /O/ /   / /L/ /   / /R/ /   / /S/ /   / /X/ //  /     /
        /     /  // --- /   / --- /   / --- /   / --- /   / --- //  /     /
@@ -44,4 +44,4 @@ Good Luck!
           \ Z /  \ X /  \ C /  \ V /  \ B /  \ N /  \ M /  \ P /
            "-"    "-"    "-"    "-"    "-"    "-"    "-"    "-"
 John Savard
-\
+
