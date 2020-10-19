@@ -1,3 +1,4 @@
+
 Five women sat in a row at the dinner table. Each had got there in a different way, each was eating a different kind of food, each had brought with her a different object and each had left at home a different pet.
 
 Noether had many difficulties during the journey there by foot; Germain, who was at the far left, heard the woman sitting next to her telling tales of her journey by boat. The woman who had got there by train sat left of someone who had got there by plane; the woman eating burger mentioned that getting there was her first time traveling by train. The woman who had got there by bus mentioned how she had left her pet rabbit at home. One of the ladies opened her bag and took out her laptop; the woman next to her recalled how she used to have one of those too, but then her pet rabbit chewed it and spat it out completely useless. 
