@@ -39,7 +39,7 @@ def f0(_p1, _p0):
     while _g6 < len(_p1):
         _g7 = _p1[_g6]
         if _g7 == 5:
-            return ''.join(map(chr, flag)), _f1(_p1, _g6)  # The flag
+            return ''.join(map(chr, flag)), _f1(_p1, _g6)  # The Flag
 
         _g8 = _p1[_g6 + 1]
         _g9 = _p1[_g6 + 2]
