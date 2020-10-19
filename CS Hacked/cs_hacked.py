@@ -13,7 +13,7 @@ def sequence_perms():
     words_len = {length: list(set(items)) for length, items in groupby(words, key=len) if length in packets_len}
     possible_words = [words_len[packet_len] for packet_len in packets_len]
     print(possible_words)
-    return [i for i in product(*possible_words)]
+    return [x for x in product(*possible_words)]
 
 
 perms = sequence_perms()
