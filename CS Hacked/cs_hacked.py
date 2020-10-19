@@ -13,12 +13,12 @@ def sequence_perms():
     words_len = {length: list(set(items)) for length, items in groupby(words, key=len) if length in packets_len}
     possible_words = [words_len[packet_len] for packet_len in packets_len]
     print(possible_words)
-    return [o for o in product(*possible_words)]
+    return [i for i in product(*possible_words)]
 
 
 perms = sequence_perms()
 start_time = time.time()
-# The correct sequence is: 'particularly', 'administration', 'a', 'as', 'I', 'environmental', 'about', 'across', 'ability', 'according'
+# The correct sequence is: 'particularly administration a as I environmental about across ability according'
 
 for i in range(len(perms)):
     with socket.socket() as conn:
