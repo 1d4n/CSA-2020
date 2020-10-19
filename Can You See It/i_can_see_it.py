@@ -6,7 +6,7 @@ cap = cv2.VideoCapture('can_you_see_it.mp4')
 f = open("flag.txt", "w")
 
 while cap.isOpened():
-    print('working.. please wait...')
+    print('working... please wait...')
     for i in range(1438):
         ret, frame = cap.read()
         if ret:
@@ -23,4 +23,4 @@ while cap.isOpened():
 
 f.close()
 finish_time = time.time()
-print(finish_time - start_time, "seconds")  # 40 secs
+print(finish_time - start_time, "seconds")  # ~ 40 secs
